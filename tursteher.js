@@ -22,40 +22,6 @@ client.on('message', message => {
         
     }
     
-    if(command === 'tiktok'){
-        message.channel.send('Slazzy.On.Dior')
-        message.react('👍');
-    }
-
-    if(command === 'siri'){
-        const siriembed = new Discord.MessageEmbed()
-        .setImage('https://cdn.discordapp.com/attachments/788075137684471832/796985314006007848/5ynjhwurcpv21_2.jpg')
-        .setTitle('This is Siri')
-        .setColor('#ffa6fb')
-        message.channel.send(siriembed);
-    }
-
-    if(command === 'teku'){
-        message.channel.send('he is funny but he is gay too');
-    }
-
-    if(command === 'norwalio'){
-        message.channel.send('very cool guy i laik him');
-        const norwalioembed = new Discord.MessageEmbed()
-        .setImage('https://cdn.discordapp.com/attachments/788075137684471832/795975828102053888/8VVIhhy7yWFHK_unbFDc8eQ5XKD6Q0sNzAjGmgQGDwWeWAxKPDDmQnTr3UdFQZsxsLqWmQDPzp9HdFMosA5GZCDipEuGDEQkopmg.png')
-        return message.channel.send(norwalioembed);
-    }
-
-    if(command === 'shaxe'){
-        message.channel.send('he is very handsome yesyes');
-        const shaxeembed = new Discord.MessageEmbed()
-            .setColor('#f200e2') 
-            .setTitle('this command is for shaxe the idiot <3')
-            .setDescription('but he is sus tho')
-
-            return message.channel.send(shaxeembed);
-    }
-    
     if(command === 'creator'){
         message.channel.send('pa$ha#0001');
     }
@@ -71,8 +37,7 @@ client.on('message', message => {
                 { name: '-creator', value: 'Shows the creator of the Bot.' },
                 { name: '-avatar', value: 'Shows your or someone elses avatar.' },
                 { name: '-kick', value: 'Kicks a member (Staff Only)' },
-                { name: '-clear (1-10)', value: 'Clears a chat (Staff Only)' },
-                { name: '-lgbt', value: 'show some respect for the lgbt community' }          
+                { name: '-clear (1-10)', value: 'Clears a chat (Staff Only)' }        
 
             );
                 return message.channel.send(embed);
@@ -85,7 +50,7 @@ client.on('message', message => {
           });
     
 
-    if(command === 'latexgummi'){
+    if(command === 'regelwerk'){
         const embed = new Discord.MessageEmbed()
             .setColor('#ff0000')
             .setAuthor('Bei nicht befolgen der Regeln, ist ein Auschluss möglich.')
@@ -110,9 +75,6 @@ client.on('message', message => {
                 return message.channel.send(embed);
         }
 
-    if(command === 'help2'){
-        
-    }
 
     if(command === 'avatar'){
             let User = message.mentions.users.first();
@@ -135,12 +97,10 @@ client.on('message', message => {
     
     if(command === 'agree'){
         message.react('👍');
-        message.channel.send('I fully agree and thats true and a fact!!!!');
     }
 
     if(command === 'disagree'){
         message.react('👎');
-        message.channel.send('I fully disagree and thats not true and not a fact!!!!');
     }
 
     if(command === 'kick'){
@@ -162,7 +122,7 @@ client.on('message', message => {
         const kickembed = new Discord.MessageEmbed()
         .setTitle('Member kicked')
         .setThumbnail(Member.user.displayAvatarURL())
-        .addField('kicked by le', message.author)
+        .addField('kicked by', message.author)
         .setFooter('Time kicked', client.user.displayAvatarURL())
         .setTimestamp()
 
@@ -189,7 +149,7 @@ client.on('message', message => {
         const banembed = new Discord.MessageEmbed()
         .setTitle('Member banned')
         .setThumbnail(Member.user.displayAvatarURL())
-        .addField('banned by le', message.author)
+        .addField('banned by ', message.author)
         .setFooter('Time kicked', client.user.displayAvatarURL())
         .setTimestamp()
 
@@ -222,4 +182,4 @@ client.on('message', message => {
 
 // immer an letzter Stelle der Command!!!
 
-client.login('NzkzOTUwMTI4MDA4NDYyNDI2.X-ztrQ.5dQZtdBkeMsP_9HEF6jhafVba_s');
+client.login('Nein');
