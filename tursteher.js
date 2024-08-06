@@ -7,7 +7,7 @@ const prefix = '-';
 
 client.once('ready', () => {
     console.log('Bot ist online!');
-    client.user.setActivity('Pornhub', { type: 'WATCHING' });
+    client.user.setActivity('Discord', { type: 'WATCHING' });
 
 });
 
