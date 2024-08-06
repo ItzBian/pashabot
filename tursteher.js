@@ -16,10 +16,7 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if(command === 'lgbt'){
-        message.channel.send('is good!!');
-
-        
+     
     }
     
     if(command === 'creator'){
